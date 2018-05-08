@@ -1,0 +1,10 @@
+{
+    "isValid": true,
+    "response": {
+        "HighPriorityPercentage": 50,
+        "MedPriorityPercentage": 24.5,
+        "LowPriorityPercentage": 25.5,
+        "ProductivityPercentage": 36
+    },
+    "error": null
+}

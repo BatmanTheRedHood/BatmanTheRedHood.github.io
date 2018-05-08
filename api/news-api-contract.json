@@ -1,0 +1,36 @@
+{
+    "isValid": true,
+    "response": [
+        {
+            "Ticket": {
+                "Id": "MVP-123",
+                "Link": "http://www.jira.com/ticket/mvp-123"
+            },
+            "User": {
+                "Id": 9845094,
+                "Name": "Pulkit Arora"
+            },
+            "event": {
+                "Type": "CREATED",
+                "Time": "2 day ago",
+                "Message": "New bug created"
+            }
+        },
+        {
+            "Ticket": {
+                "Id": "MVP-46",
+                "Link": "http://www.jira.com/ticket/mvp-123"
+            },
+            "User": {
+                "Id": 5754433,
+                "Name": "Nagendra Desai"
+            },
+            "event": {
+                "Type": "COMMENTED",
+                "Time": "9 minutes ago",
+                "Message": "Please close this issue as it looks like a duplicate of MVP-112. Thanks!"
+            }
+        }
+    ],
+    "error": null
+}

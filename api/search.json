@@ -1,0 +1,76 @@
+{
+        "response": [
+            {
+                "name": "mindtuit",
+                "id": 291,
+                "type": "PROJECT"
+            },
+            {
+                "name": "mindtuit_bangalore",
+                "id": 293,
+                "type": "PROJECT"
+            },
+            {
+                "name": "mindtutors",
+                "id": 303,
+                "type": "TEAM"
+            },
+            {
+                "name": "delhimindtuit",
+                "id": 307,
+                "type": "PROJECT"
+            },
+            {
+                "name": "digital_india",
+                "id": 325,
+                "type": "PROJECT"
+            },
+            {
+                "name": "india",
+                "id": 372,
+                "type": "LOCATION"
+            },
+            {
+                "name": "ANATENNA",
+                "id": 46,
+                "type": "TECHNOLOGY"
+            },
+            {
+                "name": "ANALOG",
+                "id": 38,
+                "type": "TECHNOLOGY"
+            },
+            {
+                "name": "ANALOG6",
+                "id": 116,
+                "type": "TECHNOLOGY"
+            },
+            {
+                "name": "china",
+                "id": 11,
+                "type": "LOCATION"
+            },
+            {
+                "name": "china6",
+                "id": 75,
+                "type": "LOCATION"
+            },
+            {
+                "name": "mindtutors1",
+                "id": 89,
+                "type": "TEAM"
+            },
+            {
+                "name": "mindtutors2",
+                "id": 87,
+                "type": "TEAM"
+            },
+            {
+                "name": "mindtutors3",
+                "id": 93,
+                "type": "TEAM"
+            }
+        ],
+        "isValid": true,
+        "errors": []
+}

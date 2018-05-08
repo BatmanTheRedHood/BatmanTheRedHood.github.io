@@ -1,0 +1,10 @@
+{
+    "isValid": true,
+    "response": {
+        "ProviderName": "Jira",
+        "ProviderIcon": "SomeImageUrlOrLocalImagePath",
+        "TotalBugs": 16,
+        "BugsResolved": 9
+    },
+    "error": null
+}

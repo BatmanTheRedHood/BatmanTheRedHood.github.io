@@ -1,0 +1,300 @@
+[
+    {
+        "api": "GetUserStoryDetails",
+        "method": "GET",
+        "header": {
+            "Authorization": "UserAuthToken",
+            "Content-Type": "application/json"
+        },
+        "requestBody": null,
+        "response": {
+            "isValid": true,
+            "response": {
+                "ProviderName": "Jira",
+                "ProviderIcon": "SomeImageUrlOrLocalImagePath",
+                "TotalStory": 32,
+                "StoryResolved": 18
+            },
+            "error": null 
+        }
+    },
+    {
+        "api": "GetUserBugDetails",
+        "method": "GET",
+        "header": {
+            "Authorization": "UserAuthToken",
+            "Content-Type": "application/json"
+        },
+        "requestBody": null,
+        "response": {
+            "isValid": true,
+            "response": {
+                "ProviderName": "Jira",
+                "ProviderIcon": "SomeImageUrlOrLocalImagePath",
+                "TotalBugs": 16,
+                "BugsResolved": 9
+            },
+            "error": null 
+        }
+    },
+    {
+        "api": "GetUserProductivityDetails",
+        "method": "GET",
+        "header": {
+            "Authorization": "UserAuthToken",
+            "Content-Type": "application/json"
+        },
+        "requestBody": null,
+        "response": {
+            "isValid": true,
+            "response": {
+                "HighPriorityTaskPercentage": 50,
+                "MedPriorityTaskPercentage": 24.5,
+                "LowPriorityTaskPercentage": 25.5,
+                "ProductivityPercentage": 36
+            },
+            "error": null 
+        }
+    },
+    {
+        "VAGL_Comment": "In response, Event types can be RESOLVED, COMMENTED, CREATED, ASSIGNED etc. Plz define rest. Event icons will be picked based on event type",
+        "api": "GetNews",
+        "method": "GET",
+        "header": {
+            "Authorization": "UserAuthToken",
+            "Content-Type": "application/json"
+        },
+        "requestBody": null,
+        "response": {
+            "isValid": true,
+            "response": [
+                {
+                    "Ticket": {
+                        "Id": "MVP-123",
+                        "Link": "http://www.jira.com/ticket/mvp-123"
+                    },
+                    "User": {
+                        "Id": 9845094,
+                        "Name": "Pulkit Arora"
+                    },
+                    "event": {
+                        "Type": "CREATED",
+                        "Time": "2 day ago",
+                        "Message": "New bug created"
+                    }
+                },
+                {
+                    "Ticket": {
+                        "Id": "MVP-46",
+                        "Link": "http://www.jira.com/ticket/mvp-123"
+                    },
+                    "User": {
+                        "Id": 5754433,
+                        "Name": "Nagendra Desai"
+                    },
+                    "event": {
+                        "Type": "COMMENTED",
+                        "Time": "9 minutes ago",
+                        "Message": "Please close this issue as it looks like a duplicate of MVP-112. Thanks!"
+                    }
+                }
+            ],
+            "error": null 
+        }
+    },
+    {
+        "VAGL_Comment": "In response, if user image is not provided",
+        "api": "GetNotifications",
+        "method": "GET",
+        "header": {
+            "Authorization": "UserAuthToken",
+            "Content-Type": "application/json"
+        },
+        "requestBody": null,
+        "response": {
+            "isValid": true,
+            "response": [
+                {
+                    "Ticket": {
+                        "Id": "MVP-123",
+                        "Link": "http://www.jira.com/ticket/mvp-123"
+                    },
+                    "User": {
+                        "Id": 9845094,
+                        "Name": "Pulkit Arora",
+                        "Image": "http://s3.amazon.com/jira-image/13456533.jpg"
+                    },
+                    "event": {
+                        "Time": "2 day ago",
+                        "Message": "USER tagged you in a comment on TICKET"
+                    }
+                },
+                {
+                    "Ticket": {
+                        "Id": "MVP-46",
+                        "Link": "http://www.jira.com/ticket/mvp-123"
+                    },
+                    "User": {
+                        "Id": 5754433,
+                        "Name": "Kanika",
+                        "Image": null
+                    },
+                    "event": {
+                        "Time": "19 minutes ago",
+                        "Message": "USER assigned TICKET to you."
+                    }
+                },
+                {
+                    "Ticket": null,
+                    "User": {
+                        "Id": 5754433,
+                        "Name": "Pulkit Arora",
+                        "Image": null
+                    },
+                    "event": {
+                        "Time": "2 hrs ago",
+                        "Message": "USER created a bug and assigned to you."
+                    }
+                }
+            ],
+            "error": null 
+        }
+    },
+    {
+        "VAGL_Comment": "Todo Status : 0:- PENDING 1:- COMPLETED",
+        "api": "GetUserTodos",
+        "method": "GET",
+        "header": {
+            "Authorization": "UserAuthToken",
+            "Content-Type": "application/json"
+        },
+        "requestBody": null,
+        "response": {
+            "isValid": true,
+            "response": [
+                {
+                    "Id": 31,
+                    "Detail": "Talk to Pulkit about design",
+                    "Status": 0
+                },
+                {
+                    "Id": 451,
+                    "Detail": "Talk to Nagendra about PPT",
+                    "Status": 0
+                },
+                {
+                    "Id": 456,
+                    "Detail": "Hire 2 more interns",
+                    "Status": 1
+                },
+                {
+                    "Id": 32,
+                    "Detail": "Talk to Pulkit about design",
+                    "Status": 1
+                },
+                {
+                    "Id": 566,
+                    "Detail": "Talk to Pulkit about design",
+                    "Status": 0
+                }
+            ],
+            "error": null 
+        }
+    },
+    {
+        "VAGL_Comment": "Success response should have all User ToDos including the one created",
+        "api": "AddUserTodo",
+        "method": "POST",
+        "header": {
+            "Authorization": "UserAuthToken",
+            "Content-Type": "application/json"
+        },
+        "requestBody": {
+            "Detail": "Hire 2 FTEs"
+        },
+        "response": {
+            "isValid": true,
+            "response": [
+                {
+                    "Id": 631,
+                    "Detail": "Hire 2 FTEs",
+                    "Status": 0
+                },
+                {
+                    "Id": 31,
+                    "Detail": "Talk to Pulkit about design",
+                    "Status": 0
+                },
+                {
+                    "Id": 451,
+                    "Detail": "Talk to Nagendra about PPT",
+                    "Status": 0
+                },
+                {
+                    "Id": 456,
+                    "Detail": "Hire 2 more interns",
+                    "Status": 1
+                },
+                {
+                    "Id": 32,
+                    "Detail": "Talk to Pulkit about design",
+                    "Status": 1
+                },
+                {
+                    "Id": 566,
+                    "Detail": "Talk to Pulkit about design",
+                    "Status": 0
+                }
+            ],
+            "error": null 
+        }
+    },
+    {
+        "VAGL_Comment": "Success response should have all User ToDos including the one completed",
+        "api": "CompleteUserTodo",
+        "method": "POST",
+        "header": {
+            "Authorization": "UserAuthToken",
+            "Content-Type": "application/json"
+        },
+        "requestBody": {
+            "Id": "631"
+        },
+        "response": {
+            "isValid": true,
+            "response": [
+                {
+                    "Id": 631,
+                    "Detail": "Hire 2 FTEs",
+                    "Status": 1
+                },
+                {
+                    "Id": 31,
+                    "Detail": "Talk to Pulkit about design",
+                    "Status": 0
+                },
+                {
+                    "Id": 451,
+                    "Detail": "Talk to Nagendra about PPT",
+                    "Status": 0
+                },
+                {
+                    "Id": 456,
+                    "Detail": "Hire 2 more interns",
+                    "Status": 1
+                },
+                {
+                    "Id": 32,
+                    "Detail": "Talk to Pulkit about design",
+                    "Status": 1
+                },
+                {
+                    "Id": 566,
+                    "Detail": "Talk to Pulkit about design",
+                    "Status": 0
+                }
+            ],
+            "error": null 
+        }
+    }
+]
