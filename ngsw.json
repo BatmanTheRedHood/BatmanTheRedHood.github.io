@@ -12,7 +12,7 @@
         "/main.489700901bc45b4b9d01.js",
         "/polyfills.5ac8875d8f9429a7aacd.js",
         "/runtime.a66f828dca56eeb90e02.js",
-        "/styles.3ff695c00d717f2d2a11.css"
+        "/styles.e185b3a4c74431890da5.css"
       ],
       "patterns": []
     },
@@ -30,11 +30,11 @@
   "hashTable": {
     "/assets/icons/newsteinIcon.png": "48acd9a693cc90e70ba291a57aa69a4c2b5f0374",
     "/favicon.ico": "84161b857f5c547e3699ddfbffc6d8d737542e01",
-    "/index.html": "1b393d605a81eb1a95e48bbdc15db8338c17e50e",
+    "/index.html": "65b55e813741e1488b0ba486dd709a99f173f718",
     "/main.489700901bc45b4b9d01.js": "1a2b291988e81b9dcc3c818bb84b1057a05c0b01",
     "/polyfills.5ac8875d8f9429a7aacd.js": "05b60ed2d025cba7ae90bef196be8624514d600e",
     "/runtime.a66f828dca56eeb90e02.js": "078e320cc6fdaf355836c3b1c52b059cdd33fc7e",
-    "/styles.3ff695c00d717f2d2a11.css": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+    "/styles.e185b3a4c74431890da5.css": "f48e939ad7d106eb2e9a419432c8f06140104fc2"
   },
   "navigationUrls": [
     {
