@@ -1,11 +1,11 @@
 {
   "name": "Newstein Game",
-  "short_name": "Newstein Game",
+  "short_name": "NewsteinGame",
   "theme_color": "#1976d2",
   "background_color": "#fafafa",
   "display": "standalone",
   "scope": "/",
-  "start_url": "/game",
+  "start_url": "/",
   ​​"orientation": "landscape",
   "icons": [
     {
