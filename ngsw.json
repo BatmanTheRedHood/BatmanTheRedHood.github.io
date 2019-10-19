@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1571495750179,
+  "timestamp": 1571496554036,
   "index": "/index.html",
   "assetGroups": [
     {
@@ -11,7 +11,7 @@
         "/es2015-polyfills.8324bb31dd8aa5f2460c.js",
         "/favicon.ico",
         "/index.html",
-        "/main.11c7ce71dc15b9c764cb.js",
+        "/main.920d2b985756cea06135.js",
         "/polyfills.8bbb231b43165d65d357.js",
         "/runtime.26209474bfa8dc87a77c.js",
         "/scripts.a2131f02d2037f1847c8.js",
@@ -52,8 +52,8 @@
     "/assets/img/phone.png": "57927fa4412422faa895e2d353a9aa5cc8637033",
     "/es2015-polyfills.8324bb31dd8aa5f2460c.js": "1612fe8f7e8e0c856f0885ff179e93363c67834f",
     "/favicon.ico": "84161b857f5c547e3699ddfbffc6d8d737542e01",
-    "/index.html": "fd9127217bc76a718a727b5702fd160908f0170c",
-    "/main.11c7ce71dc15b9c764cb.js": "0687cb77d34eba0c2879a8cb9f4c6377b0355ed7",
+    "/index.html": "b930149740909cc58bae2223fca55873a3dc2210",
+    "/main.920d2b985756cea06135.js": "735326e0fa781687078c66cc860c7f6b5895b757",
     "/polyfills.8bbb231b43165d65d357.js": "ffa449995bf2eba2ccd0a002417214f7eb75e7b5",
     "/runtime.26209474bfa8dc87a77c.js": "b62956c2192bfe5516d6374e753773901ed50ec5",
     "/scripts.a2131f02d2037f1847c8.js": "1bcc5ba6dda31ff32f071325603de7927909a24c",
